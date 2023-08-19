@@ -1,26 +1,27 @@
-<?php
+<html>
+<head>
+<title>Random Background Color</title>
+</head>
+<body>
+<h1>Random Background Color</h1>
+<script>
+// Get the body element.
+const body = document.querySelector("body");
 
-$mindMap = array(
-  'centralNode' => array(
-    'text' => 'This is the central node',
-    'color' => '#00008B',
-  ),
-  'subNodes' => array(
-    array(
-      'text' => 'This is a sub-node',
-      'color' => '#00FF00',
-    ),
-    array(
-      'text' => 'This is another sub-node',
-      'color' => '#0000FF',
-    ),
-  ),
-);
+// Create a function to generate a random background color.
+function randomColor() {
+  const red = Math.floor(Math.random() * 255);
+  const green = Math.floor(Math.random() * 255);
+  const blue = Math.floor(Math.random() * 255);
 
-echo '<ul>';
-foreach ($mindMap['subNodes'] as $subNode) {
-  echo '<li style="color: ' . $subNode['color'] . '">' . $subNode['text'] . '</li>';
+  return `rgb(${red}, ${green}, ${blue})`;
 }
-echo '</ul>';
 
-?>
+// Listen for clicks on the body element.
+body.addEventListener("click", function() {
+  // Set the background color to a random color.
+  body.style.backgroundColor = randomColor();
+});
+</script>
+</body>
+</html>
