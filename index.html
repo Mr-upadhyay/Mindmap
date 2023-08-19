@@ -1,79 +1,46 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Mind Map of Fundamental Rights</title>
+<title>Mind Map</title>
 <style>
-.mindmap {
-  padding: 20px;
-  background-color: #ffffff;
-}
-
-.mindmap ul {
-  list-style-type: none;
+body {
   margin: 0;
   padding: 0;
 }
 
-.mindmap li {
-  margin: 0 0 10px 0;
+.mind-map {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.mindmap li ul {
-  margin-left: 20px;
+.mind-map-node {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
 }
 
-.mindmap li a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.mindmap li a:hover {
-  text-decoration: underline;
-}
-
-.mindmap .main {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.mindmap .sub {
+.mind-map-node .text {
   font-size: 16px;
+}
+
+.mind-map-node .sub-node {
+  margin-left: 20px;
 }
 </style>
 </head>
 <body>
-<div class="mindmap">
-<ul>
-<li class="main">Fundamental Rights</li>
-<li class="sub">The Right to Equality</li>
-<ul>
-<li>Equality before the law</li>
-<li>Equal protection of the laws</li>
-<li>Prohibition of discrimination</li>
-</ul>
-<li class="sub">The Right to Freedom</li>
-<ul>
-<li>Freedom of speech and expression</li>
-<li>Freedom of assembly</li>
-<li>Freedom of association</li>
-<li>Freedom of movement</li>
-<li>Freedom to practice any religion</li>
-</ul>
-<li class="sub">The Right to Property</li>
-<li class="sub">The Right to Religion</li>
-<ul>
-<li>Freedom to profess, practice, and propagate any religion</li>
-</ul>
-<li class="sub">The Cultural and Educational Rights</li>
-<ul>
-<li>Right to conserve one's culture</li>
-<li>Right to establish and maintain educational institutions</li>
-<li>Right to use one's own language</li>
-</ul>
-<li class="sub">The Right to Constitutional Remedies</li>
-<li class="sub">The Limitations on Fundamental Rights</li>
-<li class="sub">The Case Law on Fundamental Rights</li>
-<li class="sub">The Role of the Supreme Court in Protecting Fundamental Rights</li>
-</ul>
+<div class="mind-map">
+  <div class="mind-map-node">
+    <div class="text">This is the central node</div>
+    <div class="sub-node">
+      <div class="text">This is a sub-node</div>
+      <div class="sub-node">
+        <div class="text">This is a sub-sub-node</div>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>
