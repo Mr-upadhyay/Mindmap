@@ -25,8 +25,12 @@ body {
   font-size: 16px;
 }
 
-.mind-map-node .sub-node {
+.mind-map-node ul {
   margin-left: 20px;
+}
+
+.mind-map-node li {
+  list-style-type: none;
 }
 </style>
 </head>
@@ -34,12 +38,11 @@ body {
 <div class="mind-map">
   <div class="mind-map-node">
     <div class="text">This is the central node</div>
-    <div class="sub-node">
-      <div class="text">This is a sub-node</div>
-      <div class="sub-node">
-        <div class="text">This is a sub-sub-node</div>
-      </div>
-    </div>
+    <ul>
+      <li>This is a sub-node</li>
+      <li>This is another sub-node</li>
+      <li>This is a third sub-node</li>
+    </ul>
   </div>
 </div>
 </body>
